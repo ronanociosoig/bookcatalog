@@ -7,7 +7,6 @@
 //
 
 #import "SONAppData.h"
-#import "EGOCache.h"
 #import "SONDefines.h"
 #import "SONCatalogSection.h"
 
