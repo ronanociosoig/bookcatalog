@@ -2,7 +2,7 @@
 
 Sample project to parse a web service providing details of a list of qualifications (SAT, Junior Cert.), their subjects / content.
 
-The web service returns an etag header, and this is used for subsequent requests. 
+The web service returns an etag header, and this is used for subsequent requests, and if the server response with '304 Not Modified', then the cached data is used.   
 
 Networking is based on NSURLSession, and wraps this to give a simple to use interface where you only specify the URL and parameters. The response is asynchronous and updated the view after is it parsed. 
 
