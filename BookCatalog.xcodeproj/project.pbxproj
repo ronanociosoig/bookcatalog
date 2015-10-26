@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35F88ACA9E7E6B47E6A6428A /* libPods-BookCatalogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8001C9DE3ABB1646973975 /* libPods-BookCatalogTests.a */; };
+		A701803FA3A69AAE566D6813 /* libPods-BookCatalog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C495220DDD7F3AC818390146 /* libPods-BookCatalog.a */; };
+		AF1E110F1BCC2C6F002C7E56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E110E1BCC2C6F002C7E56 /* main.m */; };
+		AF1E11121BCC2C6F002C7E56 /* SONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11111BCC2C6F002C7E56 /* SONAppDelegate.m */; };
+		AF1E11181BCC2C6F002C7E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1E11161BCC2C6F002C7E56 /* Main.storyboard */; };
+		AF1E111A1BCC2C6F002C7E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1E11191BCC2C6F002C7E56 /* Assets.xcassets */; };
+		AF1E111D1BCC2C6F002C7E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1E111B1BCC2C6F002C7E56 /* LaunchScreen.storyboard */; };
+		AF1E11321BCD8764002C7E56 /* SONNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11311BCD8764002C7E56 /* SONNetworkingManager.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E11351BCD877E002C7E56 /* SONAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11341BCD877E002C7E56 /* SONAppController.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E11461BCDA43C002C7E56 /* SONDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11451BCDA43C002C7E56 /* SONDefines.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E114C1BCEB889002C7E56 /* SONGetRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E114B1BCEB889002C7E56 /* SONGetRequestHelper.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E11511BD04B3F002C7E56 /* SONNetworkingManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11501BD04B3F002C7E56 /* SONNetworkingManagerTests.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E11531BD0551E002C7E56 /* SONAppControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11521BD0551E002C7E56 /* SONAppControllerTests.m */; settings = {ASSET_TAGS = (); }; };
+		AF1E115B1BD05C73002C7E56 /* BookCatalogOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E115A1BD05C73002C7E56 /* BookCatalogOnlineTests.m */; };
+		AF4E21A21BD588460018C396 /* SONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21A11BD588460018C396 /* SONTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21A71BD5A8000018C396 /* SONCatalogSection.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21A61BD5A8000018C396 /* SONCatalogSection.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21A91BD5AC150018C396 /* SONCatalogSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21A81BD5AC150018C396 /* SONCatalogSectionTests.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21AD1BD5B6960018C396 /* SONTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21AB1BD5B6960018C396 /* SONTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21AE1BD5B6960018C396 /* SONTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4E21AC1BD5B6960018C396 /* SONTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		AF4E21B11BD63B270018C396 /* SONContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21B01BD63B270018C396 /* SONContentTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21B41BD64D750018C396 /* SONTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21B31BD64D750018C396 /* SONTableViewCellModel.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21B71BD659EA0018C396 /* SONContentTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21B61BD659EA0018C396 /* SONContentTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21BA1BD69C650018C396 /* SONCatalogColorMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21B91BD69C650018C396 /* SONCatalogColorMapper.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21BE1BD6D4DC0018C396 /* SONContentTableViewDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21BD1BD6D4DC0018C396 /* SONContentTableViewDataSourceTests.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21C41BD6F9FB0018C396 /* SONContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21C21BD6F9FB0018C396 /* SONContentTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21C51BD6F9FB0018C396 /* SONContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4E21C31BD6F9FB0018C396 /* SONContentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		AF4E21C81BD6FAA80018C396 /* SONContentTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21C71BD6FAA80018C396 /* SONContentTableViewCellModel.m */; settings = {ASSET_TAGS = (); }; };
+		AF4E21CC1BD81B0C0018C396 /* SONTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E21CB1BD81B0C0018C396 /* SONTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		AF5146061BD3A11E00A032F5 /* SONAppDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5146051BD3A11E00A032F5 /* SONAppDataTests.m */; settings = {ASSET_TAGS = (); }; };
+		AF5146091BD55CEB00A032F5 /* MockAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5146081BD55CEB00A032F5 /* MockAppData.m */; settings = {ASSET_TAGS = (); }; };
+		AF70B6A31BD17E5A00B5182F /* SONAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF70B6A21BD17E5A00B5182F /* SONAppData.m */; settings = {ASSET_TAGS = (); }; };
+		AF70B6A81BD1B1A400B5182F /* SONDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11451BCDA43C002C7E56 /* SONDefines.m */; settings = {ASSET_TAGS = (); }; };
+		AF70B6A91BD1B1A400B5182F /* SONDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E11451BCDA43C002C7E56 /* SONDefines.m */; settings = {ASSET_TAGS = (); }; };
+		AF70B6AB1BD2BA3900B5182F /* GojimoSample.json in Resources */ = {isa = PBXBuildFile; fileRef = AF70B6AA1BD2BA3900B5182F /* GojimoSample.json */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF1E113F1BCD87F0002C7E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF1E11021BCC2C6F002C7E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1E11091BCC2C6F002C7E56;
+			remoteInfo = BookCatalog;
+		};
+		AF1E115D1BD05C73002C7E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF1E11021BCC2C6F002C7E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1E11091BCC2C6F002C7E56;
+			remoteInfo = BookCatalog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C7622434A9BF1DA34FF9A17 /* Pods-BookCatalogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCatalogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookCatalogTests/Pods-BookCatalogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9780788ACBF4709CB0E03A64 /* Pods-BookCatalogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCatalogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookCatalogTests/Pods-BookCatalogTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B3CC6F44650EB785C24C1B1 /* Pods-BookCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCatalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookCatalog/Pods-BookCatalog.release.xcconfig"; sourceTree = "<group>"; };
+		AF1E110A1BCC2C6F002C7E56 /* BookCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1E110E1BCC2C6F002C7E56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF1E11101BCC2C6F002C7E56 /* SONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SONAppDelegate.h; sourceTree = "<group>"; };
+		AF1E11111BCC2C6F002C7E56 /* SONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONAppDelegate.m; sourceTree = "<group>"; };
+		AF1E11171BCC2C6F002C7E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF1E11191BCC2C6F002C7E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF1E111C1BCC2C6F002C7E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF1E111E1BCC2C6F002C7E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1E11301BCD8764002C7E56 /* SONNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONNetworkingManager.h; sourceTree = "<group>"; };
+		AF1E11311BCD8764002C7E56 /* SONNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONNetworkingManager.m; sourceTree = "<group>"; };
+		AF1E11331BCD877E002C7E56 /* SONAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONAppController.h; sourceTree = "<group>"; };
+		AF1E11341BCD877E002C7E56 /* SONAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppController.m; sourceTree = "<group>"; };
+		AF1E113A1BCD87F0002C7E56 /* BookCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1E113E1BCD87F0002C7E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1E11441BCDA43C002C7E56 /* SONDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONDefines.h; sourceTree = "<group>"; };
+		AF1E11451BCDA43C002C7E56 /* SONDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONDefines.m; sourceTree = "<group>"; };
+		AF1E114A1BCEB889002C7E56 /* SONGetRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONGetRequestHelper.h; sourceTree = "<group>"; };
+		AF1E114B1BCEB889002C7E56 /* SONGetRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONGetRequestHelper.m; sourceTree = "<group>"; };
+		AF1E11501BD04B3F002C7E56 /* SONNetworkingManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONNetworkingManagerTests.m; sourceTree = "<group>"; };
+		AF1E11521BD0551E002C7E56 /* SONAppControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppControllerTests.m; sourceTree = "<group>"; };
+		AF1E11581BD05C73002C7E56 /* BookCatalogOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCatalogOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1E115A1BD05C73002C7E56 /* BookCatalogOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookCatalogOnlineTests.m; sourceTree = "<group>"; };
+		AF1E115C1BD05C73002C7E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4E21A01BD588460018C396 /* SONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewController.h; sourceTree = "<group>"; };
+		AF4E21A11BD588460018C396 /* SONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewController.m; sourceTree = "<group>"; };
+		AF4E21A51BD5A8000018C396 /* SONCatalogSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONCatalogSection.h; sourceTree = "<group>"; };
+		AF4E21A61BD5A8000018C396 /* SONCatalogSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONCatalogSection.m; sourceTree = "<group>"; };
+		AF4E21A81BD5AC150018C396 /* SONCatalogSectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONCatalogSectionTests.m; sourceTree = "<group>"; };
+		AF4E21AA1BD5B6960018C396 /* SONTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewCell.h; sourceTree = "<group>"; };
+		AF4E21AB1BD5B6960018C396 /* SONTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewCell.m; sourceTree = "<group>"; };
+		AF4E21AC1BD5B6960018C396 /* SONTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONTableViewCell.xib; sourceTree = "<group>"; };
+		AF4E21AF1BD63B270018C396 /* SONContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONContentTableViewController.h; sourceTree = "<group>"; };
+		AF4E21B01BD63B270018C396 /* SONContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONContentTableViewController.m; sourceTree = "<group>"; };
+		AF4E21B21BD64D750018C396 /* SONTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewCellModel.h; sourceTree = "<group>"; };
+		AF4E21B31BD64D750018C396 /* SONTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewCellModel.m; sourceTree = "<group>"; };
+		AF4E21B51BD659EA0018C396 /* SONContentTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONContentTableViewDataSource.h; sourceTree = "<group>"; };
+		AF4E21B61BD659EA0018C396 /* SONContentTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONContentTableViewDataSource.m; sourceTree = "<group>"; };
+		AF4E21B81BD69C650018C396 /* SONCatalogColorMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONCatalogColorMapper.h; sourceTree = "<group>"; };
+		AF4E21B91BD69C650018C396 /* SONCatalogColorMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONCatalogColorMapper.m; sourceTree = "<group>"; };
+		AF4E21BD1BD6D4DC0018C396 /* SONContentTableViewDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONContentTableViewDataSourceTests.m; sourceTree = "<group>"; };
+		AF4E21C11BD6F9FB0018C396 /* SONContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONContentTableViewCell.h; sourceTree = "<group>"; };
+		AF4E21C21BD6F9FB0018C396 /* SONContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONContentTableViewCell.m; sourceTree = "<group>"; };
+		AF4E21C31BD6F9FB0018C396 /* SONContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONContentTableViewCell.xib; sourceTree = "<group>"; };
+		AF4E21C61BD6FAA80018C396 /* SONContentTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONContentTableViewCellModel.h; sourceTree = "<group>"; };
+		AF4E21C71BD6FAA80018C396 /* SONContentTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONContentTableViewCellModel.m; sourceTree = "<group>"; };
+		AF4E21CA1BD81B0C0018C396 /* SONTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewDataSource.h; sourceTree = "<group>"; };
+		AF4E21CB1BD81B0C0018C396 /* SONTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewDataSource.m; sourceTree = "<group>"; };
+		AF5146051BD3A11E00A032F5 /* SONAppDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppDataTests.m; sourceTree = "<group>"; };
+		AF5146071BD55CEB00A032F5 /* MockAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockAppData.h; sourceTree = "<group>"; };
+		AF5146081BD55CEB00A032F5 /* MockAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockAppData.m; sourceTree = "<group>"; };
+		AF70B6A11BD17E5A00B5182F /* SONAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONAppData.h; sourceTree = "<group>"; };
+		AF70B6A21BD17E5A00B5182F /* SONAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppData.m; sourceTree = "<group>"; };
+		AF70B6AA1BD2BA3900B5182F /* GojimoSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GojimoSample.json; sourceTree = "<group>"; };
+		C495220DDD7F3AC818390146 /* libPods-BookCatalog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookCatalog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FBE7B0101A2DE8A97EF8F6 /* Pods-BookCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookCatalog/Pods-BookCatalog.debug.xcconfig"; sourceTree = "<group>"; };
+		EA8001C9DE3ABB1646973975 /* libPods-BookCatalogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookCatalogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF1E11071BCC2C6F002C7E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A701803FA3A69AAE566D6813 /* libPods-BookCatalog.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11371BCD87F0002C7E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F88ACA9E7E6B47E6A6428A /* libPods-BookCatalogTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11551BD05C73002C7E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0746E98B381D29917A8E7C8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3FBE7B0101A2DE8A97EF8F6 /* Pods-BookCatalog.debug.xcconfig */,
+				9B3CC6F44650EB785C24C1B1 /* Pods-BookCatalog.release.xcconfig */,
+				6C7622434A9BF1DA34FF9A17 /* Pods-BookCatalogTests.debug.xcconfig */,
+				9780788ACBF4709CB0E03A64 /* Pods-BookCatalogTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2EFC066C5E524FFB2B110AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C495220DDD7F3AC818390146 /* libPods-BookCatalog.a */,
+				EA8001C9DE3ABB1646973975 /* libPods-BookCatalogTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1E11011BCC2C6F002C7E56 = {
+			isa = PBXGroup;
+			children = (
+				AF1E110C1BCC2C6F002C7E56 /* BookCatalog */,
+				AF1E113B1BCD87F0002C7E56 /* BookCatalogTests */,
+				AF1E11591BD05C73002C7E56 /* BookCatalogOnlineTests */,
+				AF1E110B1BCC2C6F002C7E56 /* Products */,
+				0746E98B381D29917A8E7C8C /* Pods */,
+				2EFC066C5E524FFB2B110AE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF1E110B1BCC2C6F002C7E56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E110A1BCC2C6F002C7E56 /* BookCatalog.app */,
+				AF1E113A1BCD87F0002C7E56 /* BookCatalogTests.xctest */,
+				AF1E11581BD05C73002C7E56 /* BookCatalogOnlineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF1E110C1BCC2C6F002C7E56 /* BookCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21BB1BD6AC790018C396 /* Utils */,
+				AF1E112E1BCD80EC002C7E56 /* Model */,
+				AF1E112D1BCD80E1002C7E56 /* Views */,
+				AF1E112C1BCD80D6002C7E56 /* AppDelegate */,
+				AF1E112B1BCD80D1002C7E56 /* Controllers */,
+				AF1E112A1BCD80C7002C7E56 /* View Controllers */,
+				AF1E11161BCC2C6F002C7E56 /* Main.storyboard */,
+				AF1E110D1BCC2C6F002C7E56 /* Supporting Files */,
+			);
+			path = BookCatalog;
+			sourceTree = "<group>";
+		};
+		AF1E110D1BCC2C6F002C7E56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E111B1BCC2C6F002C7E56 /* LaunchScreen.storyboard */,
+				AF1E11191BCC2C6F002C7E56 /* Assets.xcassets */,
+				AF1E111E1BCC2C6F002C7E56 /* Info.plist */,
+				AF1E110E1BCC2C6F002C7E56 /* main.m */,
+				AF1E11441BCDA43C002C7E56 /* SONDefines.h */,
+				AF1E11451BCDA43C002C7E56 /* SONDefines.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF1E112A1BCD80C7002C7E56 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21A01BD588460018C396 /* SONTableViewController.h */,
+				AF4E21A11BD588460018C396 /* SONTableViewController.m */,
+				AF4E21AF1BD63B270018C396 /* SONContentTableViewController.h */,
+				AF4E21B01BD63B270018C396 /* SONContentTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AF1E112B1BCD80D1002C7E56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E11331BCD877E002C7E56 /* SONAppController.h */,
+				AF1E11341BCD877E002C7E56 /* SONAppController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AF1E112C1BCD80D6002C7E56 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E11101BCC2C6F002C7E56 /* SONAppDelegate.h */,
+				AF1E11111BCC2C6F002C7E56 /* SONAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AF1E112D1BCD80E1002C7E56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21C01BD6F9D40018C396 /* Content Table */,
+				AF4E21BF1BD6F9C50018C396 /* Main Table */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF1E112E1BCD80EC002C7E56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF70B6A11BD17E5A00B5182F /* SONAppData.h */,
+				AF70B6A21BD17E5A00B5182F /* SONAppData.m */,
+				AF4E21A51BD5A8000018C396 /* SONCatalogSection.h */,
+				AF4E21A61BD5A8000018C396 /* SONCatalogSection.m */,
+				AF1E112F1BCD80F5002C7E56 /* API */,
+				AF4E21C91BD6FACA0018C396 /* Data Sources */,
+				AF4E21BC1BD6AC9E0018C396 /* TableView Models */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF1E112F1BCD80F5002C7E56 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E114A1BCEB889002C7E56 /* SONGetRequestHelper.h */,
+				AF1E114B1BCEB889002C7E56 /* SONGetRequestHelper.m */,
+				AF1E11301BCD8764002C7E56 /* SONNetworkingManager.h */,
+				AF1E11311BCD8764002C7E56 /* SONNetworkingManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		AF1E113B1BCD87F0002C7E56 /* BookCatalogTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF51460A1BD562F000A032F5 /* Mocks */,
+				AF70B6AA1BD2BA3900B5182F /* GojimoSample.json */,
+				AF1E113E1BCD87F0002C7E56 /* Info.plist */,
+				AF1E11501BD04B3F002C7E56 /* SONNetworkingManagerTests.m */,
+				AF1E11521BD0551E002C7E56 /* SONAppControllerTests.m */,
+				AF5146051BD3A11E00A032F5 /* SONAppDataTests.m */,
+				AF4E21A81BD5AC150018C396 /* SONCatalogSectionTests.m */,
+				AF4E21BD1BD6D4DC0018C396 /* SONContentTableViewDataSourceTests.m */,
+			);
+			path = BookCatalogTests;
+			sourceTree = "<group>";
+		};
+		AF1E11591BD05C73002C7E56 /* BookCatalogOnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E115A1BD05C73002C7E56 /* BookCatalogOnlineTests.m */,
+				AF1E115C1BD05C73002C7E56 /* Info.plist */,
+			);
+			path = BookCatalogOnlineTests;
+			sourceTree = "<group>";
+		};
+		AF4E21BB1BD6AC790018C396 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21B81BD69C650018C396 /* SONCatalogColorMapper.h */,
+				AF4E21B91BD69C650018C396 /* SONCatalogColorMapper.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		AF4E21BC1BD6AC9E0018C396 /* TableView Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21B21BD64D750018C396 /* SONTableViewCellModel.h */,
+				AF4E21B31BD64D750018C396 /* SONTableViewCellModel.m */,
+				AF4E21C61BD6FAA80018C396 /* SONContentTableViewCellModel.h */,
+				AF4E21C71BD6FAA80018C396 /* SONContentTableViewCellModel.m */,
+			);
+			name = "TableView Models";
+			sourceTree = "<group>";
+		};
+		AF4E21BF1BD6F9C50018C396 /* Main Table */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21AA1BD5B6960018C396 /* SONTableViewCell.h */,
+				AF4E21AB1BD5B6960018C396 /* SONTableViewCell.m */,
+				AF4E21AC1BD5B6960018C396 /* SONTableViewCell.xib */,
+			);
+			name = "Main Table";
+			sourceTree = "<group>";
+		};
+		AF4E21C01BD6F9D40018C396 /* Content Table */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21C11BD6F9FB0018C396 /* SONContentTableViewCell.h */,
+				AF4E21C21BD6F9FB0018C396 /* SONContentTableViewCell.m */,
+				AF4E21C31BD6F9FB0018C396 /* SONContentTableViewCell.xib */,
+			);
+			name = "Content Table";
+			sourceTree = "<group>";
+		};
+		AF4E21C91BD6FACA0018C396 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E21B51BD659EA0018C396 /* SONContentTableViewDataSource.h */,
+				AF4E21B61BD659EA0018C396 /* SONContentTableViewDataSource.m */,
+				AF4E21CA1BD81B0C0018C396 /* SONTableViewDataSource.h */,
+				AF4E21CB1BD81B0C0018C396 /* SONTableViewDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		AF51460A1BD562F000A032F5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5146071BD55CEB00A032F5 /* MockAppData.h */,
+				AF5146081BD55CEB00A032F5 /* MockAppData.m */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF1E11091BCC2C6F002C7E56 /* BookCatalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1E11211BCC2C6F002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalog" */;
+			buildPhases = (
+				827CAF46DE003934692E55C1 /* Check Pods Manifest.lock */,
+				AF1E11061BCC2C6F002C7E56 /* Sources */,
+				AF1E11071BCC2C6F002C7E56 /* Frameworks */,
+				AF1E11081BCC2C6F002C7E56 /* Resources */,
+				3B8DEEF88517F940713D5902 /* Copy Pods Resources */,
+				AA23F4133CB5362F30370755 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookCatalog;
+			productName = BookCatalog;
+			productReference = AF1E110A1BCC2C6F002C7E56 /* BookCatalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF1E11391BCD87F0002C7E56 /* BookCatalogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1E11411BCD87F0002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalogTests" */;
+			buildPhases = (
+				56118B5349CF73BE18F3CCC9 /* Check Pods Manifest.lock */,
+				AF1E11361BCD87F0002C7E56 /* Sources */,
+				AF1E11371BCD87F0002C7E56 /* Frameworks */,
+				AF1E11381BCD87F0002C7E56 /* Resources */,
+				2B7F9E1BDE2B24C2A69F1ECE /* Copy Pods Resources */,
+				002BB9716BBB320B0B1F047A /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF1E11401BCD87F0002C7E56 /* PBXTargetDependency */,
+			);
+			name = BookCatalogTests;
+			productName = BookCatalogTests;
+			productReference = AF1E113A1BCD87F0002C7E56 /* BookCatalogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF1E11571BD05C73002C7E56 /* BookCatalogOnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1E115F1BD05C73002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalogOnlineTests" */;
+			buildPhases = (
+				AF1E11541BD05C73002C7E56 /* Sources */,
+				AF1E11551BD05C73002C7E56 /* Frameworks */,
+				AF1E11561BD05C73002C7E56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF1E115E1BD05C73002C7E56 /* PBXTargetDependency */,
+			);
+			name = BookCatalogOnlineTests;
+			productName = BookCatalogOnlineTests;
+			productReference = AF1E11581BD05C73002C7E56 /* BookCatalogOnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF1E11021BCC2C6F002C7E56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SON;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Sonomos Software S.L.";
+				TargetAttributes = {
+					AF1E11091BCC2C6F002C7E56 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					AF1E11391BCD87F0002C7E56 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = AF1E11091BCC2C6F002C7E56;
+					};
+					AF1E11571BD05C73002C7E56 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = AF1E11091BCC2C6F002C7E56;
+					};
+				};
+			};
+			buildConfigurationList = AF1E11051BCC2C6F002C7E56 /* Build configuration list for PBXProject "BookCatalog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF1E11011BCC2C6F002C7E56;
+			productRefGroup = AF1E110B1BCC2C6F002C7E56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF1E11091BCC2C6F002C7E56 /* BookCatalog */,
+				AF1E11391BCD87F0002C7E56 /* BookCatalogTests */,
+				AF1E11571BD05C73002C7E56 /* BookCatalogOnlineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF1E11081BCC2C6F002C7E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4E21AE1BD5B6960018C396 /* SONTableViewCell.xib in Resources */,
+				AF4E21C51BD6F9FB0018C396 /* SONContentTableViewCell.xib in Resources */,
+				AF1E111D1BCC2C6F002C7E56 /* LaunchScreen.storyboard in Resources */,
+				AF1E111A1BCC2C6F002C7E56 /* Assets.xcassets in Resources */,
+				AF1E11181BCC2C6F002C7E56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11381BCD87F0002C7E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF70B6AB1BD2BA3900B5182F /* GojimoSample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11561BD05C73002C7E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		002BB9716BBB320B0B1F047A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookCatalogTests/Pods-BookCatalogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B7F9E1BDE2B24C2A69F1ECE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookCatalogTests/Pods-BookCatalogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B8DEEF88517F940713D5902 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookCatalog/Pods-BookCatalog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56118B5349CF73BE18F3CCC9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		827CAF46DE003934692E55C1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA23F4133CB5362F30370755 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookCatalog/Pods-BookCatalog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF1E11061BCC2C6F002C7E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4E21B41BD64D750018C396 /* SONTableViewCellModel.m in Sources */,
+				AF1E11321BCD8764002C7E56 /* SONNetworkingManager.m in Sources */,
+				AF4E21C41BD6F9FB0018C396 /* SONContentTableViewCell.m in Sources */,
+				AF70B6A31BD17E5A00B5182F /* SONAppData.m in Sources */,
+				AF1E11461BCDA43C002C7E56 /* SONDefines.m in Sources */,
+				AF4E21B11BD63B270018C396 /* SONContentTableViewController.m in Sources */,
+				AF4E21B71BD659EA0018C396 /* SONContentTableViewDataSource.m in Sources */,
+				AF1E11351BCD877E002C7E56 /* SONAppController.m in Sources */,
+				AF4E21BA1BD69C650018C396 /* SONCatalogColorMapper.m in Sources */,
+				AF1E11121BCC2C6F002C7E56 /* SONAppDelegate.m in Sources */,
+				AF4E21A71BD5A8000018C396 /* SONCatalogSection.m in Sources */,
+				AF4E21C81BD6FAA80018C396 /* SONContentTableViewCellModel.m in Sources */,
+				AF1E110F1BCC2C6F002C7E56 /* main.m in Sources */,
+				AF1E114C1BCEB889002C7E56 /* SONGetRequestHelper.m in Sources */,
+				AF4E21A21BD588460018C396 /* SONTableViewController.m in Sources */,
+				AF4E21AD1BD5B6960018C396 /* SONTableViewCell.m in Sources */,
+				AF4E21CC1BD81B0C0018C396 /* SONTableViewDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11361BCD87F0002C7E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1E11511BD04B3F002C7E56 /* SONNetworkingManagerTests.m in Sources */,
+				AF5146061BD3A11E00A032F5 /* SONAppDataTests.m in Sources */,
+				AF4E21BE1BD6D4DC0018C396 /* SONContentTableViewDataSourceTests.m in Sources */,
+				AF5146091BD55CEB00A032F5 /* MockAppData.m in Sources */,
+				AF70B6A81BD1B1A400B5182F /* SONDefines.m in Sources */,
+				AF4E21A91BD5AC150018C396 /* SONCatalogSectionTests.m in Sources */,
+				AF1E11531BD0551E002C7E56 /* SONAppControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1E11541BD05C73002C7E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1E115B1BD05C73002C7E56 /* BookCatalogOnlineTests.m in Sources */,
+				AF70B6A91BD1B1A400B5182F /* SONDefines.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF1E11401BCD87F0002C7E56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1E11091BCC2C6F002C7E56 /* BookCatalog */;
+			targetProxy = AF1E113F1BCD87F0002C7E56 /* PBXContainerItemProxy */;
+		};
+		AF1E115E1BD05C73002C7E56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1E11091BCC2C6F002C7E56 /* BookCatalog */;
+			targetProxy = AF1E115D1BD05C73002C7E56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF1E11161BCC2C6F002C7E56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF1E11171BCC2C6F002C7E56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF1E111B1BCC2C6F002C7E56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF1E111C1BCC2C6F002C7E56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF1E111F1BCC2C6F002C7E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF1E11201BCC2C6F002C7E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF1E11221BCC2C6F002C7E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FBE7B0101A2DE8A97EF8F6 /* Pods-BookCatalog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BookCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF1E11231BCC2C6F002C7E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3CC6F44650EB785C24C1B1 /* Pods-BookCatalog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BookCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF1E11421BCD87F0002C7E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7622434A9BF1DA34FF9A17 /* Pods-BookCatalogTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BookCatalogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCatalog.app/BookCatalog";
+			};
+			name = Debug;
+		};
+		AF1E11431BCD87F0002C7E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9780788ACBF4709CB0E03A64 /* Pods-BookCatalogTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BookCatalogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCatalog.app/BookCatalog";
+			};
+			name = Release;
+		};
+		AF1E11601BD05C73002C7E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BookCatalogOnlineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalogOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCatalog.app/BookCatalog";
+			};
+			name = Debug;
+		};
+		AF1E11611BD05C73002C7E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BookCatalogOnlineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.BookCatalogOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCatalog.app/BookCatalog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF1E11051BCC2C6F002C7E56 /* Build configuration list for PBXProject "BookCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1E111F1BCC2C6F002C7E56 /* Debug */,
+				AF1E11201BCC2C6F002C7E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1E11211BCC2C6F002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1E11221BCC2C6F002C7E56 /* Debug */,
+				AF1E11231BCC2C6F002C7E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1E11411BCD87F0002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1E11421BCD87F0002C7E56 /* Debug */,
+				AF1E11431BCD87F0002C7E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1E115F1BD05C73002C7E56 /* Build configuration list for PBXNativeTarget "BookCatalogOnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1E11601BD05C73002C7E56 /* Debug */,
+				AF1E11611BD05C73002C7E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF1E11021BCC2C6F002C7E56 /* Project object */;
+}

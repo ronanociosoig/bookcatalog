@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="SONTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRE-fX-Bio" userLabel="NameLabel">
+                        <rect key="frame" x="8" y="8" width="254" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="254" id="H6l-Qe-Yst"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-qU-GVd" userLabel="CountryValue">
+                        <rect key="frame" x="8" y="43" width="268" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eLk-HK-06v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subjects: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddJ-TJ-Qh9">
+                        <rect key="frame" x="8" y="69" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mE4-BJ-cxP"/>
+                            <constraint firstAttribute="width" constant="150" id="wHP-zz-idI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ddJ-TJ-Qh9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2bQ-3l-vxL"/>
+                    <constraint firstItem="XRE-fX-Bio" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3x6-QV-oiq"/>
+                    <constraint firstItem="ddJ-TJ-Qh9" firstAttribute="top" secondItem="gHM-qU-GVd" secondAttribute="bottom" constant="5" id="5Ga-NY-K4O"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ddJ-TJ-Qh9" secondAttribute="bottom" constant="5" id="Kz4-Kp-GHz"/>
+                    <constraint firstItem="ddJ-TJ-Qh9" firstAttribute="top" secondItem="gHM-qU-GVd" secondAttribute="bottom" constant="5" id="QgU-dS-wdW"/>
+                    <constraint firstItem="gHM-qU-GVd" firstAttribute="top" secondItem="XRE-fX-Bio" secondAttribute="bottom" constant="2" id="dgB-CF-hxF"/>
+                    <constraint firstItem="XRE-fX-Bio" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kxh-cC-IVq"/>
+                    <constraint firstItem="ddJ-TJ-Qh9" firstAttribute="top" secondItem="gHM-qU-GVd" secondAttribute="bottom" constant="5" id="nKy-nJ-Kva"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gHM-qU-GVd" secondAttribute="trailing" constant="36" id="v6K-vb-Eay"/>
+                    <constraint firstItem="gHM-qU-GVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="w8E-LY-QP1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryLabel" destination="gHM-qU-GVd" id="6HL-mA-8bq"/>
+                <outlet property="nameLabel" destination="XRE-fX-Bio" id="fGu-6f-L9K"/>
+                <outlet property="subjectsLabel" destination="ddJ-TJ-Qh9" id="tRw-2Q-YEd"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="262"/>
+        </tableViewCell>
+    </objects>
+</document>
