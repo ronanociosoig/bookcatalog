@@ -139,14 +139,16 @@
                 NSMutableURLRequest *request2 = [manager requestForURL:url];
                 [request2 addValue:eTagResponseHeader forHTTPHeaderField:@"If-None-Match"];
                 
-                NSURLSessionDataTask *task2 = [[NSURLSession sharedSession] dataTaskWithRequest:request2 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                NSURLSessionDataTask *task2 = [[NSURLSession sharedSession] dataTaskWithRequest:request2 completionHandler:^(NSData *data, NSURLResponse *response2, NSError *error) {
                     // check the HTTP code.
                     // it should be 304.
-                    NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+                    NSHTTPURLResponse *httpResponse2 = (NSHTTPURLResponse*) response2;
+                    NSDictionary *dictionary2 = [httpResponse2 allHeaderFields];
+                    NSString *status = dictionary2[@"Status"];
                     
-                    SONLog(@"HTTP header field: %lu", (long)httpResp.statusCode);
+                    SONLog(@"HTTP header field: %lu", (long)httpResponse2.statusCode);
                     
-                    if (httpResp.statusCode == kHTTP_RESPONSE_CODE_NOT_MODIFIED) {
+                    if ([status isEqualToString:@"304 Not Modified"]) {
                         [validServerResponseExpectation fulfill];
                     }
                 }];

@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) NSString * __nullable etagValue;
 @property (strong, nonatomic) NSArray * __nullable responseData;
+@property (strong, nonatomic) NSData * __nullable rawData;
 @property (strong, nonatomic) NSArray * __nullable catalogItems;
 @property (assign, nonatomic) BOOL update;
 

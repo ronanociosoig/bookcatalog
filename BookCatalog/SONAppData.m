@@ -9,6 +9,7 @@
 #import "SONAppData.h"
 #import "SONDefines.h"
 #import "SONCatalogSection.h"
+#import "EGOCache.h"
 
 // store Etag
 static NSString *const kSONEtagKey = @"ETagKey";
@@ -16,6 +17,9 @@ static NSString *const kSONResponseDataKey = @"ResponseDataKey";
 static NSString *const kInvalidSection = @"N/A";
 
 @interface SONAppData()
+{
+    EGOCache *cache;
+}
 
 @end
 
@@ -26,6 +30,7 @@ static NSString *const kInvalidSection = @"N/A";
     if (self) {
         dataResponseKey = kSONResponseDataKey;
         etagKey = kSONEtagKey;
+        cache = [EGOCache globalCache];
         [self load];
     }
     return self;
@@ -34,13 +39,17 @@ static NSString *const kInvalidSection = @"N/A";
 - (void)load {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.etagValue = [defaults objectForKey:etagKey];
-    self.responseData = [defaults objectForKey:dataResponseKey];
+    self.responseData = (NSArray*)[cache objectForKey:kSONResponseDataKey];
+    
+    if (self.responseData) {
+        [self parse];
+    }
 }
 
 - (void)save {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.etagValue forKey:etagKey];
-    [defaults setObject:self.responseData forKey:dataResponseKey];
+    [cache setObject:self.responseData forKey:kSONResponseDataKey];
     [defaults synchronize];
 }
 

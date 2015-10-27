@@ -46,7 +46,11 @@
         } else {
             NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
             NSDictionary *headerFields = [httpResp allHeaderFields];
-            if (httpResp.statusCode == kHTTP_RESPONSE_CODE_OK) {
+            NSString *status = headerFields[@"Status"];
+            if ([status isEqualToString:kSTATUS_NOT_MODIFIED]) {
+                NSError *httpError = [NSError errorWithDomain:kSONErrorDomain code:304 userInfo:@{@"LocalisedDescription":@"HTTP Server response code."}];
+                failureBlock(httpError);
+            } else if (httpResp.statusCode == kHTTP_RESPONSE_CODE_OK) {
                 NSError *jsonError;
                 NSArray *jsonResponse =
                 [NSJSONSerialization JSONObjectWithData:data

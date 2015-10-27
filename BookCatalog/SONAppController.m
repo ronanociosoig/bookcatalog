@@ -54,6 +54,7 @@
         self.appData.etagValue = headerFields[@"Etag"];
         self.appData.responseData = responseJSON;
         [self.appData parse];
+        [self.appData save];
         SONLog(@"Get task success!");
         [self taskCompleted];
     } failureBlock:^(NSError * _Nullable error) {
@@ -61,6 +62,11 @@
         if (error.code == kHTTP_RESPONSE_CODE_NOT_MODIFIED) {
             // No data to update, use info from the cache.
             SONLog(@"Received HTTP status 304 Not modified. Use cached data.");
+            if(!self.appData.responseData) {
+                // We have an error - there is no data in the cache.
+                SONLog(@"We have a problem - no cached data. ");
+                [[[UIAlertView alloc] initWithTitle:@"Error" message:@"304. Not Modified. Error loading request and missing cached data." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+            }
         } else {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Error loading request" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
         }

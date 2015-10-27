@@ -55,4 +55,6 @@ extern const NSInteger kHTTP_RESPONSE_CODE_OK;
 extern const NSInteger kHTTP_RESPONSE_CODE_NOT_MODIFIED;
 extern const NSInteger kHTTP_RESPONSE_CODE_NOT_FOUND;
 
+extern NSString *const kSTATUS_NOT_MODIFIED;
+
 #endif

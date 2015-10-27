@@ -8,7 +8,7 @@
 
 #import "SONDefines.h"
 
-NSString *const kSONBookCatalogServerRoot = @"https://api.gojimo.net";
+NSString *const kSONBookCatalogServerRoot = @"http://api.gojimo.net";
 NSString *const kSONBookCatalogQualifications = @"/api/v4/qualifications";
 
 NSString *const kSONErrorDomain = @"BookCatalogErrorDomain";
@@ -27,3 +27,5 @@ NSString *const kCellReuseIdentifier = @"CellIdentifier";
 const NSInteger kHTTP_RESPONSE_CODE_OK = 200;
 const NSInteger kHTTP_RESPONSE_CODE_NOT_MODIFIED = 304;
 const NSInteger kHTTP_RESPONSE_CODE_NOT_FOUND = 404;
+
+NSString *const kSTATUS_NOT_MODIFIED = @"304 Not Modified";

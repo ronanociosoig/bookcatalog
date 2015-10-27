@@ -1,4 +1,5 @@
 PODS:
+  - EGOCache (2.1.3)
   - OHHTTPStubs (4.4.0):
     - OHHTTPStubs/Default (= 4.4.0)
   - OHHTTPStubs/Core (4.4.0)
@@ -15,10 +16,12 @@ PODS:
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
+  - EGOCache
   - OHHTTPStubs
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
   OHHTTPStubs: 1a95a653b78287a1fdb44eb38364b43257ac3550
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
