@@ -7,6 +7,7 @@
 //
 
 #import "MockAppData.h"
+#import "EGOCache.h"
 
 @implementation MockAppData
 
@@ -15,6 +16,8 @@
     if (self) {
         dataResponseKey = @"com.sonomos.bookcatalog.test";
         etagKey = @"TestKey";
+        NSString* cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"EGOCache.test"];
+        cache = [[EGOCache alloc] initWithCacheDirectory:cachesDirectory];
         [self load];
         
     }

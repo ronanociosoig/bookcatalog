@@ -8,7 +8,7 @@ pod 'EGOCache'
 end
 
 target 'BookCatalogTests' do
-
+pod 'EGOCache'
 pod 'OHHTTPStubs'
 
 end

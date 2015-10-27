@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class EGOCache;
+
 @interface SONAppData : NSObject
 {
     NSString *dataResponseKey;
     NSString *etagKey;
+    EGOCache *cache;
 }
 
 @property (strong, nonatomic) NSString * __nullable etagValue;

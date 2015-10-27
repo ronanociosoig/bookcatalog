@@ -16,13 +16,6 @@ static NSString *const kSONEtagKey = @"ETagKey";
 static NSString *const kSONResponseDataKey = @"ResponseDataKey";
 static NSString *const kInvalidSection = @"N/A";
 
-@interface SONAppData()
-{
-    EGOCache *cache;
-}
-
-@end
-
 @implementation SONAppData
 
 - (instancetype) init {
