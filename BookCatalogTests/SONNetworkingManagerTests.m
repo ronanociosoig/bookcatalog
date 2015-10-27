@@ -107,14 +107,18 @@ static NSString *const kJSONValueHeader = @"application/json";
     [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
         return YES;
     } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
-        return [OHHTTPStubsResponse responseWithJSONObject:@{@"response":@"OK"} statusCode:200 headers:@{@"Content-Type": @"application/json",@"Etag":@"\"47022b4e31aeea59d8df89c812611a63\""}];
+        NSString *response = @"\"OK\"";
+        NSData *data = [response dataUsingEncoding:NSUTF8StringEncoding];
+        return [OHHTTPStubsResponse responseWithData:data statusCode:200 headers:@{@"Content-Type": @"application/json",@"Etag":@"\"47022b4e31aeea59d8df89c812611a63\""}];
+        
+        //return [OHHTTPStubsResponse responseWithJSONObject:@{@"response":@"OK"} statusCode:200 headers:@{@"Content-Type": @"application/json",@"Etag":@"\"47022b4e31aeea59d8df89c812611a63\""}];
     }];
 }
 
 - (void)testEtagInRequestReturnsErrorCode {
     [OHHTTPStubs setEnabled:YES forSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     [self stubs_304_On];
-
+    
     // Given
     XCTestExpectation *errorServerResponseExpectation = [self expectationWithDescription:@"valid response for HTTP request."];
     NSString *path = [NSString stringWithFormat:@"%@%@", kSONBookCatalogServerRoot,kSONBookCatalogQualifications];
@@ -138,10 +142,10 @@ static NSString *const kJSONValueHeader = @"application/json";
     [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
         return YES;
     } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
-        return [OHHTTPStubsResponse responseWithJSONObject:@{@"response":@"Not modified"} statusCode:304 headers:@{@"Content-Type": @"application/json",@"Etag":@"\"47022b4e31aeea59d8df89c812611a63\""}];
+        NSString *response = @"\"OK\"";
+        NSData *data = [response dataUsingEncoding:NSUTF8StringEncoding];
+        return [OHHTTPStubsResponse responseWithData:data statusCode:304 headers:@{@"Content-Type": @"application/json",@"Etag":@"\"47022b4e31aeea59d8df89c812611a63\""}];
     }];
 }
-
-
 
 @end
